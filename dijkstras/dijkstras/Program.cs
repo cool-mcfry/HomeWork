@@ -83,7 +83,12 @@ class Graph<T>
         List<DijkstraRow<T>> rows = new List<DijkstraRow<T>>();
         foreach (Node<T> node in nodes)
         {
-
+            DijkstraRow<T> row = new DijkstraRow<T>(node);
+            if (node.data.Equals(start.data))
+            {
+                row.distanceFromStart = 0;
+            }
+            rows.Add(row);
         }
     }
 }
