@@ -86,9 +86,51 @@ class Graph<T>
             DijkstraRow<T> row = new DijkstraRow<T>(node);
             if (node.data.Equals(start.data))
             {
-                row.distanceFromStart = 0;
+                row.distanceFromStart = 0; 
             }
             rows.Add(row);
+        }
+
+        bool allVisited = false;
+        while(!allVisited)
+        {
+            DijkstraRow<T> shortest = rows[0];
+            foreach (DijkstraRow<T> dr in rows)
+            {
+                if (!dr.visited && shortest.visited)
+                {
+                    shortest = dr;
+                    continue;
+                }
+                if (!dr.visited && dr.distanceFromStart < shortest.distanceFromStart)
+                {
+                    shortest = dr;
+                }
+            }
+
+            Node<T> current = shortest.node;
+
+            List<DijkstraRow<T>> connected = new List<DijkstraRow<T>>();
+            foreach (Connection<T> con in shortest.node.GetConnections())
+            {
+                foreach (DijkstraRow<T> dr in rows)
+                {
+                    if (!dr.visited && dr.node.data.Equals(con.GetConnectedNode().data))
+                    {
+                        connected.Add(dr);
+                    }
+                }
+            }
+            foreach (DijkstraRow<T> row  in connected)
+            {
+                Node<T> connectedNode = row.node;
+                double distanceCalculation = shortest.distanceFromStart + connectedNode.GetConnectionWeight(current);
+                if (distanceCalculation < row.distanceFromStart)
+                {
+                    row.distanceFromStart = distanceCalculation;
+                    row.previousNode = shortest.node;
+                }
+            }
         }
     }
 }
