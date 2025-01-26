@@ -131,7 +131,43 @@ class Graph<T>
                     row.previousNode = shortest.node;
                 }
             }
+            shortest.visited = true;
+
+            allVisited = true;
+            foreach (DijkstraRow<T> dr in rows)
+            {
+                if (!dr.visited)
+                {
+                    allVisited = false;
+                }
+            }
         }
+        string output = "";
+
+        DijkstraRow<T> currentRow = null;
+        foreach (DijkstraRow<T> dr in rows)
+        {
+            if (dr.node == end)
+            {
+                currentRow = dr;
+                break;
+            }
+        }
+        while (currentRow.node != start)
+        {
+            output = currentRow.node.ToString() + output;
+            foreach (DijkstraRow<T> dr in rows)
+            {
+                if (dr.node == currentRow.previousNode)
+                {
+                    currentRow = dr;
+                    break;
+                }
+            }
+        }
+        output = currentRow.node.ToString() + output;
+        Console.WriteLine(output);
+
     }
 }
 

@@ -1,0 +1,14 @@
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\bin\Debug\net8.0\dijkstras.exe
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\bin\Debug\net8.0\dijkstras.deps.json
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\bin\Debug\net8.0\dijkstras.runtimeconfig.json
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\bin\Debug\net8.0\dijkstras.dll
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\bin\Debug\net8.0\dijkstras.pdb
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\obj\Debug\net8.0\dijkstras.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\obj\Debug\net8.0\dijkstras.AssemblyInfoInputs.cache
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\obj\Debug\net8.0\dijkstras.AssemblyInfo.cs
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\obj\Debug\net8.0\dijkstras.csproj.CoreCompileInputs.cache
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\obj\Debug\net8.0\dijkstras.dll
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\obj\Debug\net8.0\refint\dijkstras.dll
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\obj\Debug\net8.0\dijkstras.pdb
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\obj\Debug\net8.0\dijkstras.genruntimeconfig.cache
+C:\Users\joshu\OneDrive\Documents\comp science\HomeWork-main\dijkstras\dijkstras\obj\Debug\net8.0\ref\dijkstras.dll
